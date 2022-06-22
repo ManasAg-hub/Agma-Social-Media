@@ -6,6 +6,7 @@ import PostDetails from './components/PostDetails/PostDetails';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
+import Footer from './components/Footer/Footer';
 // import CreatorOrTag from './components/CreatorOrTag/CreatorOrTag';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           {/* <Route path={['/creators/:name', '/tags/:name']} component={CreatorOrTag} /> */}
           <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/posts" />)} />
         </Switch>
+        <Footer/>
       </Container>
     </BrowserRouter>
   );

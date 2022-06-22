@@ -29,7 +29,7 @@ const Navbar = () => {
     setUser(null);
   };
   return (
-    <AppBar className={classes.appBar} position="static" color="inherit">
+    <AppBar className={classes.appBar} position="sticky" color="inherit">
       <Link to="/" className={classes.brandContainer}>
         <img
           component={Link}
