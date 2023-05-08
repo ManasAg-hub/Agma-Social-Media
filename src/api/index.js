@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://agma-social-media.herokuapp.com/" });
+const API = axios.create({ baseURL: "https://agma-social-media.onrender.com/" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
